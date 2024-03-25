@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligas</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- Asegúrate de que la ruta al archivo CSS sea correcta -->
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <h1>Ligas</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Estado</th>
+            <th>Organizador</th>
+            <th>Fecha</th>
+            <th>Imagen</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% ligas.forEach(liga => { %>
+            <tr>
+                <td><%= liga.id %></td>
+                <td><%= liga.nombre %></td>
+                <td><%= liga.categoria %></td>
+                <td><%= liga.status %></td>
+                <td><%= liga.organizador %></td>
+                <td><%= liga.fecha %></td>
+                <td><img src="<%= liga.imagen %>" alt="<%= liga.nombre %>"></td>
+                <td>
+                    <a href="/ligas/<%= liga.id %>/editar">Editar</a>
+                    <a href="/ligas/<%= liga.id %>/eliminar">Eliminar</a>
+                </td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+    <a href="/ligas/nueva">Añadir Nueva Liga</a>
+</body>
+</html>

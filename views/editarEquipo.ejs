@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Equipo</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<%- include('navbar') %>
+<h1>Editar Equipo</h1>
+<form action="/equipos/editar" method="POST">
+    <input type="hidden" name="id" value="<%= equipo.id %>">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="<%= equipo.nombre %>" required><br>
+
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" value="<%= equipo.pais %>" required><br>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" value="<%= equipo.ciudad %>" required><br>
+
+    <label for="imagen">Imagen:</label>
+    <input type="text" id="imagen" name="imagen" value="<%= equipo.imagen %>" required><br>
+
+    <label for="liga">Liga:</label>
+    <select id="liga" name="liga">
+        <% ligas.forEach(liga => { %>
+            <option value="<%= liga.id %>" <%= equipo.idEquipo === liga.id ? 'selected' : '' %>><%= liga.nombre %></option>
+        <% }); %>
+    </select><br>
+    <button type="submit">Guardar</button>
+</form>
+</body>
+</html>

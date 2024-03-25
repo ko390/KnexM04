@@ -1,0 +1,27 @@
+/* Additional styles for "Acerca de mí" page */
+body {
+    background-color: #f5f5f5; /* Set background color */
+    color: #333; /* Set text color */
+}
+
+.container {
+    max-width: 800px; /* Adjust container width */
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Optional: Style specific paragraphs differently */
+p:nth-child(odd) {
+    font-style: italic;
+}

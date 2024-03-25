@@ -1,0 +1,148 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Main content styles */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Make images inside the table cells smaller */
+table img {
+  max-width: 100px; /* Adjust the value as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Make images smaller in the 'Añadir Nuevo Equipo' link */
+a[href="/equipos/nuevo"] img {
+  max-width: 50px; /* Adjust the value as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+/* Style the table header */
+table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the table rows */
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style alternating table rows */
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style table links */
+table a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Style table links on hover */
+table a:hover {
+  color: darkblue;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+

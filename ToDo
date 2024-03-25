@@ -1,0 +1,25 @@
+KnexM04
+    bin
+        www
+    db
+        KnexFile.js
+    node_modules
+    public
+        images
+        javascripts
+        stylesheets
+            style.css
+    routes
+        equipos.js
+        index.js
+        ligas.js
+        users.js
+    views
+        error.ejs
+        index.ejs
+    app.js
+    FutBall
+    package.json
+    package-lock.json
+
+this is the current state of the project i have implemented ligas and equipos crud, i have created knexfile in db, there i put thr knex config
